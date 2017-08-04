@@ -14,12 +14,17 @@ Array.prototype.memory_tile_shuffle = function(){
     }
 }
 
+// for new game, also creates divs for individual tiles
 function newGame(){
     flipped_tiles = 0;
     let output = '';
-    memory_array.memory_tile_shuffle();
-    for (let i=0; i > mem_array.length; i++){
-        output += '<div id="tile_'+i+" onclick="flipTile(this,\''+mem_array[i]+'\'')"></div>';
+    mem_array.memory_tile_shuffle();
+    for (let i=0; i < mem_array.length; i++){
+        output += '<div id="tile_'+i+'" onclick="flipTile(this,\''+mem_array[i]+'\')"></div>';
     }
-    document.getElementById('memory_board').innerHTML = output
+    document.getElementById("memory_board").innerHTML = output;
 }
+
+
+//Had to add event listener so loads on startup
+window.addEventListener("load", newGame());
