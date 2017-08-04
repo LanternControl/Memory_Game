@@ -36,7 +36,15 @@ function flipCard(card,val){
         card.innerHTML = val;
         if(mem_values.length == 0){
             mem_values.push(val);
-            mem_card
+            mem_card.push(card.id);
+        } else if( mem_array.length == 1){
+            mem_values.push(val);
+            mem_card.push(card.id);
+            if(mem_values[0] == mem_values[1]){
+                flipped_cards += 2;
+                mem_values = [];
+                mem_card = [];
+            }
         }
         
     }
