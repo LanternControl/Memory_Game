@@ -44,7 +44,16 @@ function flipCard(card,val){
                 flipped_cards += 2;
                 mem_values = [];
                 mem_card = [];
+            if(flipped_cards == mem_array.length){
+                alert("You rock!!!");
+                document.getElementById("memory_board").innerHTML == "";
+                newGame();
             }
+        } else {
+            function flipBack(){
+                
+            }
+        }
         }
         
     }
