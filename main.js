@@ -65,9 +65,9 @@ let clock = setInterval(countTimer, 1000);
 let totalSeconds = 0;
 function countTimer() {
    ++totalSeconds;
-   var hour = Math.floor(totalSeconds /3600);
-   var minute = Math.floor((totalSeconds - hour*3600)/60);
-   var seconds = totalSeconds - (hour*3600 + minute*60);
+   let hour = Math.floor(totalSeconds /3600);
+   let minute = Math.floor((totalSeconds - hour*3600)/60);
+   let seconds = totalSeconds - (hour*3600 + minute*60);
 
    document.getElementById("timer").innerHTML = minute + ":" + seconds;
 }
