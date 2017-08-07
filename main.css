@@ -1,21 +1,36 @@
+body{
+    background-image: url(Photos/giphy.gif);
+    background-size:cover;
+}
 #memory_board{
-	background:#CCC;
-	border:#999 1px solid;
-	width:800px;
+	width:680px;
 	height:540px;
 	padding:24px;
 	margin:0px auto;
 }
 
 #memory_board > div{
-	background: url(tile_bg.jpg) no-repeat;
+	background: url(Photos/Death%20Metal.jpg);
 	border:#000 1px solid;
-	width:71px;
-	height:71px;
+	width:113px;
+	height:113px;
 	float:left;
 	margin:10px;
-	padding:20px;
 	font-size:64px;
 	cursor:pointer;
 	text-align:center;
 }
+
+#timer{
+    color:white;
+    text-align: right;
+}
+
+h1{
+    margin: 0px;
+    padding-top: 40px;
+    color: white;
+    text-align: center;
+    font-family: 'Metal Mania', cursive;
+}
+    
